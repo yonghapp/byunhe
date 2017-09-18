@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>联系我们</title>
+	<link rel="stylesheet" href="css/base.css">
+	<link rel="stylesheet" href="css/header.css">
+	<link rel="stylesheet" href="css/foot.css">
+	<link rel="stylesheet" href="css/lianxi.css">
+	<link rel="icon" href="images/logo.png" type="image/x-icon"/>
+	<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=TP1I4bsoxvKXUYnugSn4PoK3"></script>
+	<style>
+		.bg{
+			width:100%;
+			height:500px;
+			background: url(images/bg.png) no-repeat center;
+			position: relative;
+			z-index: 1;
+		}
+		.conbox{
+			width:100%;
+			padding-bottom:52px;
+			background: #f1f1f1;
+		}
+		.content{
+			width:1160px;
+			margin: 0 auto;
+			position: relative;
+			z-index: 2;
+			margin-top:-168px;
+			background: #fff;
+			padding: 51px 20px 54px 20px;
+		}
+	</style>
+</head>
+<body>
+	<div class="headerbox">
+		<div class="header">
+				<p>欢迎访问北京运和科技有限公司</p>
+		</div>
+	</div>
+	<!-- 	nav 导航 -->
+		<div class="nav">
+			<div class="logo">
+					<a href="index.html"><img src="images/logo.png" alt=""></a>
+			</div>
+
+			<div class="nav_list" id="nav_list">
+				<ul>
+					<li><a href="index.html">首页</a></li>
+					<li><a href="introduce.html">公司简介</a></li>
+					<li><a href="newsdt.html">新闻动态</a></li>
+					<li><a href="fuwu.html">服务项目</a></li>
+					<li class="act"><a href="lianxi.html" class="act_a">联系我们</a></li>
+				</ul>
+
+			</div>
+		</div>
+		<div class="bg"></div>
+
+				<!-- 中间内容 -->
+		<div class="conbox">
+			<div class="content">
+		  		<div class="video">
+					<i></i><span>北京运和科技有限公司</span>
+				</div>
+				<div class="map"  id="map">
+					
+				</div>
+				<script type="text/javascript">
+					var opts = {  
+						 width : 250,     // 信息窗口宽度  
+						 height: 50,     // 信息窗口高度  
+						 title : "<b style='color:#CC5522;'>北京运和科技有限公司</b>"  // 信息窗口标题  
+						}
+						var infoWindow = new BMap.InfoWindow('中国 北京 北京市 通州区马驹桥景盛南二街<br>', opts);  // 创建信息窗口对象
+					    //创建和初始化地图函数：
+					    function initMap(){
+					        createMap();//创建地图
+					        setMapEvent();//设置地图事件
+					        addMapControl();//向地图添加控件
+					        addMapOverlay();//向地图添加覆盖物
+					    }
+					    function createMap(){	
+					        map = new BMap.Map("map");
+					        var point = new BMap.Point(116.637392,39.897445);
+					        map.centerAndZoom(point,15);
+					    }
+					    function setMapEvent(){
+					        map.enableScrollWheelZoom();
+					        // map.enableKeyboard();
+					        map.enableDragging();
+					        map.enableDoubleClickZoom()
+					    }
+					    function addClickHandler(target,window){
+					        target.addEventListener("click",function(){
+					            target.openInfoWindow(window);
+					        });
+					    }
+					    function addMapOverlay(){
+						}
+						var myGeo = new BMap.Geocoder();
+						myGeo.getPoint("中国 北京 北京市 通州区马驹桥景盛南二街", function(point){
+						  if (point) {
+						    map.centerAndZoom(point, 15);
+											   var marker = new BMap.Marker(point);        // 创建标注 
+												map.clearOverlays();
+												map.addOverlay(marker);
+												marker.openInfoWindow(infoWindow);      // 打开信息窗口
+						    map.addOverlay(new BMap.Marker(point));
+							
+						  }
+						}, "北京");
+						function showinfo(zb) {
+								var mapobj = mapArray[zb];
+								var point = new BMap.Point(mapobj.x, mapobj.y);
+								map.centerAndZoom(point, 14);
+								var infoWindow = new BMap.InfoWindow(mapobj.newstext, opts);  // 创建信息窗口对象
+								var marker = new BMap.Marker(point);        // 创建标注
+								map.clearOverlays();
+								map.addOverlay(marker);
+								marker.openInfoWindow(infoWindow);      // 打开信息窗口
+								marker.addEventListener("dragend", function(e){
+									this.openInfoWindow(infoWindow);
+									infoWindow.redraw();
+								})
+								marker.addEventListener("click", function(e){
+									this.openInfoWindow(infoWindow);
+									infoWindow.redraw();
+								})
+							}
+					    //向地图添加控件
+					    function addMapControl(){
+					        var scaleControl = new BMap.ScaleControl({anchor:BMAP_ANCHOR_BOTTOM_LEFT});
+					        scaleControl.setUnit(BMAP_UNIT_IMPERIAL);
+					        map.addControl(scaleControl);
+					        var navControl = new BMap.NavigationControl({anchor:BMAP_ANCHOR_TOP_LEFT,type:BMAP_NAVIGATION_CONTROL_LARGE});
+					        map.addControl(navControl);
+					        var overviewControl = new BMap.OverviewMapControl({anchor:BMAP_ANCHOR_BOTTOM_RIGHT,isOpen:true});
+					        map.addControl(overviewControl);
+					    }
+					    var map;
+					    initMap();
+					</script>
+
+				<div class="tianx clearfix">
+					<div class="t-top clearfix">
+						<div class="t-l">
+							<div class="t-xm">
+								<p><span>姓名</span> <span>NAME</span></p>
+								<input type="text">
+							</div>
+							<div class="t-yx">
+								<p><span>邮箱</span> <span>EMAIL</span></p>
+								<input type="text">
+							</div>
+						</div>
+						<div class="t-r">
+							<div class="gs-d clearfix">
+								<i></i><span>公司地址： 北京德福堂工业园区2号楼</span>
+							</div>
+							<div class="lx-s clearfix">
+								<i></i><span>联系方式 ：010-859922534</span>
+							</div>
+							<div class="dz-y">
+								<i></i><span>电子邮箱 ：cyzz24h@163.com</span>
+							</div>
+						</div>
+							
+					</div>
+					<div class="t-b clearfix">
+						<p><span>建议</span><span>PROPOSAL</span></p>
+						<textarea class="check">	</textarea>
+					</div>
+					<div class="tij">
+						提交
+					</div>
+				</div>
+			</div>
+
+		</div>
+
+
+<object style="position: relative;bottom:-4px;" type="text/x-scriptlet" data="foot.html" width=100% height=360></object>
+</body>
+</html>

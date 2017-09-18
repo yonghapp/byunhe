@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>服务项目</title>
+	<link rel="stylesheet" href="css/base.css">
+	<link rel="stylesheet" href="css/header.css">
+	<link rel="stylesheet" href="css/foot.css">
+	<link rel="stylesheet" href="css/fuwu.css">
+	<link rel="icon" href="images/logo.png" type="image/x-icon"/>
+	<style>
+		.bg{
+			width:100%;
+			height:500px;
+			background: url(images/bg.png) no-repeat center;
+			position: relative;
+			z-index: 1;
+		}
+		.conbox{
+			width:100%;
+			padding-bottom:52px;
+			background: #f1f1f1;
+		}
+		.content{
+			width:1160px;
+			margin: 0 auto;
+			position: relative;
+			z-index: 2;
+			margin-top:-168px;
+			background: #fff;
+			padding: 58px 20px 54px 20px;
+		}
+
+	    .page {text-align:center;width:100%;margin:20px auto;padding-top:20px;height:26px;overflow:hidden;}    
+	    .page a {padding:5px 10px;border:1px solid #CCC;margin:0px 5px;text-decoration:none;color:#333;font-size:14px;}    
+	    .page a:hover {border:1px solid #005daf;color:#005daf;}    
+	    .page .this {border:1px solid #005daf;color:#005daf;}    
+	</style>
+</head>
+<body>
+	<div class="headerbox">
+		<div class="header">
+				<p>欢迎访问北京运和科技有限公司</p>
+		</div>
+	</div>
+	<!-- 	nav 导航 -->
+		<div class="nav">
+			<div class="logo">
+					<a href="index.html"><img src="images/logo.png" alt=""></a>
+			</div>
+
+			<div class="nav_list" id="nav_list">
+				<ul>
+					<li><a href="index.html">首页</a></li>
+					<li><a href="introduce.html">公司简介</a></li>
+					<li><a href="newsdt.html">新闻动态</a></li>
+					<li class="act"><a href="fuwu.html" class="act_a">服务项目</a></li>
+					<li><a href="lianxi.html">联系我们</a></li>
+				</ul>
+
+			</div>
+		</div>
+		<div class="bg"></div>
+
+		<!-- 中间内容 -->
+		<div class="conbox">
+			<div class="content">
+		  		<div class="video">
+					<P class="title">服务项目</P>
+				</div>
+				<div class="service">
+					<div class="con-f cf-1">
+						<div class="c-n-tu1"></div>
+						<div class="c-n-tnr">
+							<p class="zt">朝阳区自助图书馆</p>
+							<p class="zt-nr">
+								朝阳区24小时图书馆是朝阳区公共文化服务体系建设的重要组成部分
+							</p>
+							<div class="grnd">
+								<a href="project.html">
+									<span>详 情</span><i class="biao"></i>
+								</a>
+								
+							</div>
+						</div>
+					</div>
+					<div class="con-f cf-2">
+						<div class="c-n-tu1"></div>
+						<div class="c-n-tnr">
+							<p class="zt">朝阳区自助图书馆</p>
+							<p class="zt-nr">
+								朝阳区24小时图书馆是朝阳区公共文化服务体系建设的重要组成部分
+							</p>
+							<div class="grnd">
+								<a href="project.html">
+									<span>详 情</span><i class="biao"></i>
+								</a>
+								
+							</div>
+						</div>
+					</div>
+					<div class="con-f cf-1">
+						<div class="c-n-tu1"></div>
+						<div class="c-n-tnr">
+							<p class="zt">朝阳区自助图书馆</p>
+							<p class="zt-nr">
+								朝阳区24小时图书馆是朝阳区公共文化服务体系建设的重要组成部分
+							</p>
+							<div class="grnd">
+								<a href="project.html">
+									<span>详 情</span><i class="biao"></i>
+								</a>
+								
+							</div>
+						</div>
+					</div>
+					<div class="con-f cf-3">
+						<div class="c-n-tu1"></div>
+						<div class="c-n-tnr">
+							<p class="zt">朝阳区自助图书馆</p>
+							<p class="zt-nr">
+								朝阳区24小时图书馆是朝阳区公共文化服务体系建设的重要组成部分
+							</p>
+							<div class="grnd">
+								<a href="project.html">
+									<span>详 情</span><i class="biao"></i>
+								</a>
+								
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="page">		    
+			        </div>
+			</div>
+		</div>
+
+	<object style="position: relative;bottom:-4px;" type="text/x-scriptlet" data="foot.html" width=100% height=360></object> 
+	<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+    <script type="text/javascript">       
+		    pageShow(1,5);    
+		    //dbPage     当前页    
+		    //totalPages 总页数    
+		    function pageShow(dbPage,totalPages)     
+		    {    
+		        $(function()     
+		        {    
+		            //page分割数量    
+		            var pageFor = 11;    
+		            var pageSlipt = parseInt(pageFor / 2);    
+		            var pageHTML = new Array;    
+		            if (dbPage > 1) //如果当前页大于1，则显示上一页    
+		            {       
+		                var dbPagePre = dbPage-1;    
+		                pageHTML += "<a href=\"javascript:pageShow('"+ (dbPagePre) +"','"+totalPages+"');\"><上一页</a>";    
+		            }    
+		                
+		            if (totalPages > pageFor)    //如果总页数大于分割页数    
+		            {                       
+		                if(dbPage <= pageSlipt+1)    
+		                {    
+		                    for (i=1;i<=pageFor;i++)     
+		                    {    
+		                    if (i == dbPage)     
+		                    {    
+		                        pageHTML += "<a href=\"javascript:pageShow('"+ i +"','"+totalPages+"' );\" class=\"this\">" +i+ "</a>";    
+		                    }    
+		                    else    
+		                    {    
+		                        pageHTML += "<a href=\"javascript:pageShow('"+ i +"','"+totalPages+"' );\">" +i+ "</a>";    
+		                    }    
+		                }    
+		            }    
+		            else if (dbPage > totalPages-pageSlipt)    
+		            {    
+		                for (i=totalPages-pageFor+1; i<=totalPages; i++)     
+		                {    
+		                    if (i == dbPage)     
+		                    {    
+		                        pageHTML += "<a href=\"javascript:pageShow('"+ i +"','"+totalPages+"' );\" class=\"this\">" +i+ "</a>";    
+		                    }    
+		                    else    
+		                    {    
+		                        pageHTML += "<a href=\"javascript:pageShow('"+ i +"','"+totalPages+"' );\">" +i+ "</a>";    
+		                    }    
+		                }    
+		            }    
+		            else    
+		            {    
+		                for (i=dbPage-pageSlipt; i<=parseInt(dbPage)+parseInt(pageSlipt); i++)     
+		                {    
+		                    if (i == dbPage)     
+		                    {    
+		                        pageHTML += "<a href=\"javascript:pageShow('"+ i +"','"+totalPages+"' );\" class=\"this\">" +i+ "</a>";    
+		                    }    
+		                    else    
+		                    {    
+		                        pageHTML += "<a href=\"javascript:pageShow('"+ i +"','"+totalPages+"' );\">" +i+ "</a>";    
+		                    }    
+		                }    
+		            }    
+		            }    
+		            else    
+		            {    
+		                for (i=1; i<=totalPages; i++)     
+		                {    
+		                    if (i == dbPage)     
+		                    {    
+		                        pageHTML += "<a href=\"javascript:pageShow('"+ i +"','"+totalPages+"' );\" class=\"this\">" +i+ "</a>";    
+		                    }    
+		                    else    
+		                    {    
+		                        pageHTML += "<a href=\"javascript:pageShow('"+ i +"','"+totalPages+"' );\">" +i+ "</a>";    
+		                    }    
+		                }    
+		            }    
+		    
+		            if (parseInt(dbPage)<parseInt(totalPages))   //如果当前页小于总页数，则显示下一页    
+		            {    
+		                var dbPageNext = parseInt(dbPage)+1;    
+		                pageHTML += "<a href=\"javascript:pageShow('"+ dbPageNext +"','"+totalPages+"');\">下一页></a>";    
+		            }    
+		                
+		            $(".page").html(pageHTML);    
+		        });    
+		    }    
+		    </script>    
+</body>
+</html>

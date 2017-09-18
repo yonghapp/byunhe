@@ -1,0 +1,148 @@
+@charset="utf-8";
+p,a,div,span{
+	font-family: "MicrosoftYaHei";
+}
+body{
+	min-width: 1200px;
+}
+a{
+    display: block;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+}
+.bg{
+	width:100%;
+	height:500px;
+	background: url(../images/bg.png) no-repeat center;
+	position: relative;
+	z-index: 1;
+}
+.conbox{
+	width:100%;
+	padding-bottom:52px;
+	background: #f1f1f1;
+}
+.content{
+	width:1160px;
+	margin: 0 auto;
+	position: relative;
+	z-index: 2;
+	margin-top:-168px;
+	background: #fff;
+	padding: 58px 20px 54px 20px;
+}
+.video{
+	width:1160px;
+	margin:0 auto;
+	overflow: hidden;
+}
+.video .title{
+	width:130px;
+	height: 46px;
+	margin:0 auto;
+	border-radius:3px;
+	border: 1px solid #000000; 
+	font-size: 20px;
+	color:#333;
+	line-height: 46px;
+	text-align: center;
+	margin-bottom: 59px;
+}
+.v_left{
+	width:500px;
+	height: 310px;
+	float:left;
+	margin:20px 50px 0 0;
+
+}
+.v_left img{
+	width:100%;
+	height: 100%;
+}
+.vid{
+	width: 100%;
+	height: 100%;
+}
+.n_tt{
+	text-indent: 32px;
+	font-size:16px;
+	line-height:28px;
+	color:#333;
+	font-family:"justify";
+}
+.culture{
+	width:1100px;
+	margin:0 auto;
+	overflow:hidden;
+}
+.culture .title{
+	width:130px;
+	height: 46px;
+	margin:0 auto;
+	border-radius:3px;
+	border: 1px solid #000000; 
+	font-size: 20px;
+	color:#333;
+	line-height: 46px;
+	text-align: center;
+	margin-top:58px;
+	margin-bottom:40px;
+}
+.c_left{
+	width:520px;
+	float:left;
+	margin-right: 60px;
+}
+.c_left .pic{
+	width:520px;
+	height: 316px;
+}
+.c_left .pic img{
+	width:100%;
+	height: 100%;
+}
+.c_right{
+	width:520px;
+	float:left;
+}
+.c_right .pic{
+	width:520px;
+	height: 316px;
+}
+.c_right .pic img{
+	width:100%;
+	height: 100%;
+}
+.p_tit{
+	font-size:18px;
+	color:#333;
+	text-indent:12px;
+	margin-top:24px;
+}
+.p_p1{
+	font-size:16px;
+	color:#666;
+	text-indent:30px;
+	line-height:10px;
+}
+.p_p2{
+	
+	text-indent:30px;
+	line-height:28px;
+	position:relative;
+}
+.p_p2 a{
+	font-size:16px;
+	color:#666;
+}
+.p_p2 span{
+	position:absolute;
+	top:10px;
+	left:15px;
+	width: 8px;
+	height: 8px;
+	display: block;
+	border-radius:50%;
+	background: #666;
+}

@@ -1,0 +1,179 @@
+@charset="utf-8";
+p,a,div,span{
+	font-family: "MicrosoftYaHei";
+}
+body{
+	min-width: 1200px;
+}
+a{
+    display: block;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+}
+.video{
+	width:1156px;
+	margin:0 auto;
+	margin-bottom: 37px;
+	overflow: hidden;
+}
+.video i{
+	display:block;
+	float:left;
+	width:32px;
+	height:28px;
+	background:url(../images/lianxi/icon-1.png);
+	background-size: 100%;
+	margin:5px 0  0 10px;
+}
+.video span{
+	margin-left: 16px;
+	font-size: 18px;
+	color:#333;
+	line-height: 38px;
+}
+.map{
+	width:1156px;
+	height:500px;
+	background:#bbb;
+}
+.tianx{
+	width:1156px;
+	margin:0 auto;
+	margin-top: 38px;
+	overflow:hidden;
+}
+.t-top{
+	margin-left: 10px;
+}
+.t-l{
+	float:left;
+}
+.t-xm{
+	margin-bottom: 30px;
+}
+.t-xm p span{
+	font-size: 18px;
+	color:#333;
+}
+.t-xm p span:nth-child(2){
+	font-size: 16px;
+	margin-left: 20px;
+}
+.t-xm input{
+	width:448px;
+	height:40px;
+	font-size:18px;
+	color:#333;
+	padding-left: 10px;
+	margin-top: 20px;
+}
+.t-yx p span{
+	font-size: 18px;
+	color:#333;
+}
+.t-yx p span:nth-child(2){
+	font-size: 16px;
+	margin-left: 20px;
+}
+.t-yx input{
+	width:448px;
+	height:40px;
+	font-size:18px;
+	color:#333;
+	padding-left: 10px;
+	margin-top: 20px;
+}
+.t-r{
+	float:left;
+	margin-top: 35px;
+	margin-left: 90px;
+}
+.gs-d{
+	margin-bottom: 31px;
+}
+.gs-d i{
+	display:block;
+	float:left;
+	width:20px;
+	height:28px;
+	background:url(../images/lianxi/icon-2.png);
+	background-size:100% ;
+	margin-right: 20px;
+	margin-top: 7px;
+}
+.gs-d span{
+	font-size: 16px;
+	color:#333;
+	line-height: 41px;
+}
+.lx-s{
+	margin-bottom: 40px;
+}
+.lx-s i{
+	display:block;
+	width:20px;
+	height:30px;
+	background:url(../images/lianxi/icon-3.png);
+	background-size:100% ;
+	float:left;
+	margin-right: 23px;
+	margin-top: 7px;
+}
+.lx-s span{
+	font-size: 16px;
+	color:#333;
+	line-height: 40px;
+}
+.dz-y i{
+	display:block;
+	float:left;
+	width:30px;
+	height:22px;
+	background:url(../images/lianxi/icon-4.png);
+	background-size:100% ;
+	margin-right: 20px;
+	margin-top: 7px;
+}
+.dz-y span{
+	font-size: 16px;
+	color:#333;
+}
+.t-b{
+	margin-left: 10px;
+	margin-top: 24px;
+}
+.t-b p{
+	margin-bottom: 24px;
+}
+.t-b p span{
+	font-size: 18px;
+	color:#333;
+}
+.t-b p span:nth-child(2){
+	margin-left:29px;
+	font-size: 16px;
+}
+.t-b textarea{
+	width:1100px;
+	height:300px;
+	font-size:16px;
+	color:#333;
+	overflow-y:hidden;
+}
+.tij{
+	width:130px;
+	height:46px;
+	text-align: center;
+	line-height: 46px;
+	font-size: 20px;
+	color:#fff;
+	border-radius: 5px;
+	margin:40px auto;
+	margin-bottom: 0px;
+	background:#0f89f5;
+}
+.tij:hover{
+	background:#0d73cd;
+	cursor:pointer;
+}

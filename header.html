@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>北京运和科技有限公司</title>
+	<link rel="stylesheet" href="css/base.css">
+	<link rel="stylesheet" href="css/header.css">
+	<link rel="icon" href="images/logo.png" type="image/x-icon"/>  
+	<style>
+	</style>
+</head>
+<body>
+	<div class="headerbox">
+		<div class="header">
+				<p>欢迎访问北京运和科技有限公司</p>
+		</div>
+	</div>
+	<!-- 	nav 导航 -->
+		<div class="nav">
+			<div class="logo">
+					<a href=""><img src="images/logo.png" alt=""></a>
+			</div>
+
+			<div class="nav_list" id="nav_list">
+				<ul>
+					<li><a href="index.html">首页</a></li>
+					<li><a href="introduce.html">公司简介</a></li>
+					<li><a href="newsdt.html">新闻动态</a></li>
+					<li><a href="fuwu.html">服务项目</a></li>
+					<li><a href="lianxi.html">联系我们</a></li>
+				</ul>
+
+			</div>
+		</div>
+	<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+	<script type="text/javascript">
+	
+		$("#nav_list ul li").on("click",function(){
+			$(this).addClass("act").siblings("li").removeClass("act");
+			$(this).children("a").addClass("act_a")
+			$(this).siblings().children("a").removeClass("act_a");
+		 })
+	
+	</script>
+</body>
+</html>
