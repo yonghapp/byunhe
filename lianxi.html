@@ -31,6 +31,11 @@
 			background: #fff;
 			padding: 51px 20px 54px 20px;
 		}
+		.mapbox{
+			width: 1156px;
+			height: 500px;
+			overflow: hidden;
+		}
 	</style>
 </head>
 <body>
@@ -64,84 +69,9 @@
 		  		<div class="video">
 					<i></i><span>北京运和科技有限公司</span>
 				</div>
-				<div class="map"  id="map">
-					
+				<div class="mapbox"  id="mapbox">
+					 <iframe height=550 width=1156 src="map.html" frameborder=0 allowfullscreen></iframe>
 				</div>
-				<script type="text/javascript">
-					var opts = {  
-						 width : 250,     // 信息窗口宽度  
-						 height: 50,     // 信息窗口高度  
-						 title : "<b style='color:#CC5522;'>北京运和科技有限公司</b>"  // 信息窗口标题  
-						}
-						var infoWindow = new BMap.InfoWindow('中国 北京 北京市 通州区马驹桥景盛南二街<br>', opts);  // 创建信息窗口对象
-					    //创建和初始化地图函数：
-					    function initMap(){
-					        createMap();//创建地图
-					        setMapEvent();//设置地图事件
-					        addMapControl();//向地图添加控件
-					        addMapOverlay();//向地图添加覆盖物
-					    }
-					    function createMap(){	
-					        map = new BMap.Map("map");
-					        var point = new BMap.Point(116.637392,39.897445);
-					        map.centerAndZoom(point,15);
-					    }
-					    function setMapEvent(){
-					        map.enableScrollWheelZoom();
-					        // map.enableKeyboard();
-					        map.enableDragging();
-					        map.enableDoubleClickZoom()
-					    }
-					    function addClickHandler(target,window){
-					        target.addEventListener("click",function(){
-					            target.openInfoWindow(window);
-					        });
-					    }
-					    function addMapOverlay(){
-						}
-						var myGeo = new BMap.Geocoder();
-						myGeo.getPoint("中国 北京 北京市 通州区马驹桥景盛南二街", function(point){
-						  if (point) {
-						    map.centerAndZoom(point, 15);
-											   var marker = new BMap.Marker(point);        // 创建标注 
-												map.clearOverlays();
-												map.addOverlay(marker);
-												marker.openInfoWindow(infoWindow);      // 打开信息窗口
-						    map.addOverlay(new BMap.Marker(point));
-							
-						  }
-						}, "北京");
-						function showinfo(zb) {
-								var mapobj = mapArray[zb];
-								var point = new BMap.Point(mapobj.x, mapobj.y);
-								map.centerAndZoom(point, 14);
-								var infoWindow = new BMap.InfoWindow(mapobj.newstext, opts);  // 创建信息窗口对象
-								var marker = new BMap.Marker(point);        // 创建标注
-								map.clearOverlays();
-								map.addOverlay(marker);
-								marker.openInfoWindow(infoWindow);      // 打开信息窗口
-								marker.addEventListener("dragend", function(e){
-									this.openInfoWindow(infoWindow);
-									infoWindow.redraw();
-								})
-								marker.addEventListener("click", function(e){
-									this.openInfoWindow(infoWindow);
-									infoWindow.redraw();
-								})
-							}
-					    //向地图添加控件
-					    function addMapControl(){
-					        var scaleControl = new BMap.ScaleControl({anchor:BMAP_ANCHOR_BOTTOM_LEFT});
-					        scaleControl.setUnit(BMAP_UNIT_IMPERIAL);
-					        map.addControl(scaleControl);
-					        var navControl = new BMap.NavigationControl({anchor:BMAP_ANCHOR_TOP_LEFT,type:BMAP_NAVIGATION_CONTROL_LARGE});
-					        map.addControl(navControl);
-					        var overviewControl = new BMap.OverviewMapControl({anchor:BMAP_ANCHOR_BOTTOM_RIGHT,isOpen:true});
-					        map.addControl(overviewControl);
-					    }
-					    var map;
-					    initMap();
-					</script>
 
 				<div class="tianx clearfix">
 					<div class="t-top clearfix">
