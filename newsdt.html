@@ -12,7 +12,7 @@
 	 .bg{
 			width:100%;
 			height:500px;
-			background: url(images/bg.png) no-repeat center;
+			background: url(images/bg.webp) no-repeat center;
 			position: relative;
 			z-index: 1;
 		}       
@@ -113,21 +113,21 @@
 			 function goPage(btn){
 			 // obj为ajax请求数据
 			 var arr=[
-			 "<div class='news_pic pg_cox'><img src='images/tu-2.png' alt=''></div>",
+			 "<div class='news_pic pg_cox'><img src='images/tu-2.webp' alt=''></div>",
 			 "<div class='news_txt pg_cox'><p class='t1' style='text-align:left;'><span>20/</span>06  &nbsp;JUNY</p><p class='t2' style='text-align:left;'>朝阳区24小时预借自取服务开通啦！</p><p class='t3' style='text-align:left;'>预借自取图书馆已覆盖所有朝阳区，再也不用为借不到好书发愁了!</p><div class='btn'><a href='news3.html'> 详 情&nbsp;&nbsp;&nbsp;<span></span></a></div></div>",
 			 "<div class='news_txt1 news_txt pg_cox'><p class='t1' style='text-align:right;'><span>19/</span>07  &nbsp;JULY </p><p class='t2' style='text-align:right;'>朝阳区的24小时自助图书馆！</p><p class='t3' style='text-align:right;'>长虹桥东北角的一个24小时自助图书馆</p><div class='btn' style='float:right;'><a href='news2.html'> 详 情&nbsp;&nbsp;&nbsp;<span></span></a></div></div>",
-			 "<div class='news_pic pg_cox'><img src='images/tu_1.png' alt=''></div>",
-			 "<div class='news_pic pg_cox'><img src='images/newxq/xx1.png' alt=''></div>",
+			 "<div class='news_pic pg_cox'><img src='images/tu_1.webp' alt=''></div>",
+			 "<div class='news_pic pg_cox'><img src='images/newxq/xx1.webp' alt=''></div>",
 			 "<div class='news_txt pg_cox'><p class='t1' style='text-align:left;'><span>13/</span>01  &nbsp; JANUARY</p><p class='t2' style='text-align:left;]'>书香朝阳·24小时自助图书馆!</p><p class='t3' style='text-align:left;'>自助图书馆能够为百姓提供365天、24小时自助办证、自助借书、自助还书、自助图书续借、查询文献、新华社实时新闻、数字资源阅览、图书馆公告信息发布等服务!</p><div class='btn'><a href='news1.html'> 详 情&nbsp;&nbsp;&nbsp;<span></span></a></div></div>",
 
-			"<div class='news_pic pg_cox'><img src='images/newxq/xx4.1.png' alt=''></div>",
+			"<div class='news_pic pg_cox'><img src='images/newxq/xx4.1.webp' alt=''></div>",
 			 "<div class='news_txt pg_cox'><p class='t1' style='text-align:left;'><span>24/</span>06  &nbsp;JUNY</p><p class='t2' style='text-align:left;'>市民可“微信”点书图书馆就近配送！</p><p class='t3' style='text-align:left;'>只需要在自助借书机上轻轻一刷，借阅书籍的相关手续就会自动办理!</p><div class='btn'><a href='news4.html'> 详 情&nbsp;&nbsp;&nbsp;<span></span></a></div></div>", 
 
 			"<div class='news_txt1 news_txt pg_cox'><p class='t1' style='text-align:right;'><span>13/</span>04  &nbsp;APRIL </p><p class='t2' style='text-align:right;'>“我的小小采购家”主题亲子活动！</p><p class='t3' style='text-align:left;'>朝阳区图书馆于2016年4月10日周日成功举办了第2期“我的小小采购家”主题亲子系列活动。</p><div class='btn' style='float:right;'><a href='news5.html'> 详 情&nbsp;&nbsp;&nbsp;<span></span></a></div></div>",
-			 "<div class='news_pic pg_cox'><img src='images/newxq/xx5.1.png' alt=''></div>",
-			 "<div class='news_pic pg_cox'><img src='images/newxq/6.png' alt=''></div>",
+			 "<div class='news_pic pg_cox'><img src='images/newxq/xx5.1.webp' alt=''></div>",
+			 "<div class='news_pic pg_cox'><img src='images/newxq/6.webp' alt=''></div>",
 			 "<div class='news_txt pg_cox'><p class='t1' style='text-align:left;'><span>23/</span>04  &nbsp;APRIL </p><p class='t2' style='text-align:left;'>自助图书馆电子资源平台现场推广</p><p class='t3' style='text-align:left;'>阅读与科技”--4•23朝阳区自助图书馆电子资源平台现场推广。</p><div class='btn' style='float:right;'><a href='news6.html'> 详 情&nbsp;&nbsp;&nbsp;<span></span></a></div></div>",
-			 "<div class='news_pic pg_cox'><img src='images/newxq/7.png' alt=''></div>",
+			 "<div class='news_pic pg_cox'><img src='images/newxq/7.webp' alt=''></div>",
 			 "<div class='news_txt pg_cox'><p class='t1' style='text-align:left;'><span>23/</span>04  &nbsp;APRIL </p><p class='t2' style='text-align:left;'>自助图书馆电北京首个自助图书馆微信平台开通 手机上可查询借还书</p><p class='t3' style='text-align:left;'>朝阳区图书馆远程监控室内可监控全区自助图书馆的使用情况</p><div class='btn' style='float:right;'><a href='news7.html'> 详 情&nbsp;&nbsp;&nbsp;<span></span></a></div></div>",];
 					  
 			 //将展示的数据赋值给pager.data (array)

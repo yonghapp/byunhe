@@ -43,16 +43,16 @@
 	<div class="bannerbox">
 		<div class="banner">
 			<div>
-				<img src="images/banner/banner01.png" alt="" />
+				<img src="images/banner/banner01.webp" alt="" />
 			</div>
 			<div>
-				<img src="images/banner/banner02.png" alt="" />
+				<img src="images/banner/banner02.webp" alt="" />
 			</div>
 			<div>
-				<img src="images/banner/banner03.png" alt="" />			
+				<img src="images/banner/banner03.webp" alt="" />			
 			</div>
 			<div>
-				<img src="images/banner/banner04.png" alt="" />		
+				<img src="images/banner/banner04.webp" alt="" />		
 			</div>
 		</div>
 	</div>
@@ -94,7 +94,7 @@
 			<div class="con">
 				<div class="con_left">
 					<div class="pic">
-						<img src="images/tu-1.png" alt="">
+						<img src="images/tu-1.webp" alt="">
 					</div>
 
 				</div>
@@ -136,7 +136,7 @@
 				<ul>
 					<li class="n_p1">
 						<div class="news_pic">
-							<img src="images/tu-2.png" alt="">
+							<img src="images/tu-2.webp" alt="">
 						</div>
 					</li>
 					<li class="n_p2">
@@ -157,7 +157,7 @@
 					</li>
 					<li class="n_p4">
 						<div class="news_pic">
-							<img src="images/tu_1.png" alt="">
+							<img src="images/tu_1.webp" alt="">
 						</div>
 					</li>
 				</ul>
@@ -176,7 +176,7 @@
 				<ul>
 					<li class="n_1"><a href="">
 						<div class="fw_pic">
-							<img src="images/fu-tu-1.png" alt="">
+							<img src="images/fu-tu-1.webp" alt="">
 						</div>
 						<div class="fw_foot">
 							<p><span></span>一卡通登录</p>
@@ -187,7 +187,7 @@
 					</a></li>
 					<li class="n_2"><a href="">
 					 	<div class="fw_pic">
-							<img src="images/fu-tu-2.png" alt="">
+							<img src="images/fu-tu-2.webp" alt="">
 						</div>
 						<div class="fw_foot">
 							<p><span></span>图书查询</p>
@@ -198,7 +198,7 @@
 					</a></li>
 					<li class="n_3"><a href="">
 						<div class="fw_pic">
-							<img src="images/fu-tu-3.png" alt="">
+							<img src="images/fu-tu-3.webp" alt="">
 						</div>
 						<div class="fw_foot">
 							<p><span></span>预约借阅</p>
@@ -360,7 +360,7 @@
   	$(this).hide();
   	$(".m_btn").show();
 	$(".m_ty").show();
-	$(".moviebox").css("background-image","url(images/banner-2.png)")
+	$(".moviebox").css("background-image","url(images/banner-2.webp)")
 	$(".movie").css("background","");
 
   })
@@ -389,13 +389,12 @@
 		 check.holder();
 
        // -------------------建议提交发生的事---------------
-         var w_ter=$(".ter").width();
-		 $(".ter").css("margin-left",-w_ter/2+"px")
+         
 		 $(".Input_btn").on("click",function(){
 		 		$(".ter").html("你的建议发送成功！")
-		 		
-		 		$(".ter").fadeIn().fadeOut(5000);
-		 		
+		 		var w_ter=$(".ter").width();
+				$(".ter").css("margin-left",-w_ter/2+"px")	 
+		 		$(".ter").fadeIn().fadeOut(4000);
 		 })
 		// ------------------------------------------------
 

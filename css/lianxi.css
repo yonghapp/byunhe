@@ -89,8 +89,16 @@ a{
 	margin-top: 35px;
 	margin-left: 90px;
 }
-.gs-d{
+.gs-d,.lx-s,.dz-y{
 	margin-bottom: 31px;
+	height:40px;
+	line-height: 40px;
+}
+
+.gs-d span,.lx-s span,.dz-y span{
+	font-size: 16px;
+	color:#333;
+	line-height: 40px;
 }
 .gs-d i{
 	display:block;
@@ -102,14 +110,6 @@ a{
 	margin-right: 20px;
 	margin-top: 7px;
 }
-.gs-d span{
-	font-size: 16px;
-	color:#333;
-	line-height: 41px;
-}
-.lx-s{
-	margin-bottom: 40px;
-}
 .lx-s i{
 	display:block;
 	width:20px;
@@ -120,11 +120,6 @@ a{
 	margin-right: 23px;
 	margin-top: 7px;
 }
-.lx-s span{
-	font-size: 16px;
-	color:#333;
-	line-height: 40px;
-}
 .dz-y i{
 	display:block;
 	float:left;
@@ -133,11 +128,7 @@ a{
 	background:url(../images/lianxi/icon-4.png);
 	background-size:100% ;
 	margin-right: 20px;
-	margin-top: 7px;
-}
-.dz-y span{
-	font-size: 16px;
-	color:#333;
+	margin-top: 10px;
 }
 .t-b{
 	margin-left: 10px;
